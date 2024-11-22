@@ -1,8 +1,5 @@
 #include <boost/optional.hpp>
 #include <algorithm>
-#include <vector>
-#include <iostream>
-
 
 template <typename Iter, typename Value>
 auto Find(Iter b, Iter e, Value&& value) -> boost::optional<decltype(*b)>

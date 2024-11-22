@@ -1,3 +1,8 @@
+/*
+	build command:
+	g++ --std=c++11 -I$(BOOST_ROOT)/include main.cpp -o AndThen
+*/
+
 #include "AndThen.h"
 
 #include <vector>

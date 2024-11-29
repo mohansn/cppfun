@@ -1,5 +1,10 @@
 #include <boost/optional.hpp>
+#include <boost/config.hpp>
 #include <algorithm>
+
+#if BOOST_CXX_VERSION < 201103L
+#error "C++ 11 or later is needed for use of Find/Find_if"
+#endif
 
 template <typename Iter, typename Value>
 auto Find(Iter b, Iter e, Value&& value) -> boost::optional<decltype(*b)>
